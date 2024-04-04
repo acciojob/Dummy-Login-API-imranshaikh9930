@@ -40,7 +40,6 @@ const LoginForm = () => {
       return;
     }
     setTimeout(() => {
-        setPasswordError('');
       console.log(user);
     }, 3000);
   };
