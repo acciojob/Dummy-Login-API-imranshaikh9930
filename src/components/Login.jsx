@@ -35,7 +35,7 @@ const LoginForm = () => {
       return;
     }
     if (user.password !== password) {
-      setPasswordError('Password incorrect');
+      setPasswordError('Password Incorrect');
       setUserError('');
       return;
     }
@@ -57,7 +57,7 @@ const LoginForm = () => {
           placeholder="Enter your email"
         />
       </div>
-      {userError && <div id="user-error" style={{ color: 'red' }}>{userError}</div>}
+      {userError && <p id="user-error" style={{ color: 'red' }}>{userError}</p>}
       <div>
         <label htmlFor="input-password">Password:</label>
         <input
@@ -68,7 +68,7 @@ const LoginForm = () => {
           placeholder="Enter your password"
         />
       </div>
-      {passwordError && <div id="password-error" style={{ color: 'red' }}>{passwordError}</div>}
+      {passwordError && <p id="password-error" style={{ color: 'red' }}>{passwordError}</p>}
       <button id="submit-form-btn" onClick={handleLogin}>Login</button>
     </div>
   );
